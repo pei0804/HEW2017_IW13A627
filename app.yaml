@@ -1,0 +1,22 @@
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /member
+  static_dir: member
+
+- url: /member/*.html
+  static_files: member/*.html
+  upload: member/*.html
+
+- url: /css
+  static_dir: css
+
+- url: /images
+  static_dir: images
