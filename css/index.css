@@ -24,16 +24,16 @@
 	border-radius: 3px;
 }
 .linkArea .presentation a {
-	background-color: darkorange;
+	background-color: #FF5900;
 }
 .linkArea .system a {
-	background-color: deepskyblue;
+	background-color: #0067FF;
 }
 .linkArea .design a {
-	background-color: deeppink;
+	background-color: #00BD03;
 }
 .linkArea .mobile a {
-	background-color: crimson;
+	background-color: #F72587;
 }
 
 /*=============================
