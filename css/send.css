@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*　リセット（初期化・初期設定）
+==============================*/
+*{padding:0;margin:0}
+
+a{
+text-decoration:none;
+}
+ul,ol{
+list-style:none;
+}
+
+img {max-width:100%}
+
+html{
+font-family:verdana,sans-serif;
+font-size:100%;
+line-height:1.5;
+background-color:#f3f1f1;
+color:#666;
+}
+
+
+/* input
+============================== */
+wrapper input {
+	display:block;
+	/*
+	opacity: 0;
+     filter: alpha(opacity=0);
+	*/
+}
+
+/*　レイアウト
+============================*/
+#wrapper{
+	width:90%;
+	margin:0 auto;
+	padding-bottom:30px;
+}
+
+#wrapper div{
+	margin-bottom:10px;
+}
+
+/*　詳細デザイン
+=======================*/
+
+#header{
+	padding-top:20px;
+	margin-bottom:500px;
+}
+
+#header li{
+	font-size:16px;
+	margin-bottom:-5px;
+	padding:0px;
+}
+
+#header li span{
+	color:#69F;
+}
+
+#header h4{
+	font-size:12px;
+	font-weight:normal;
+	color:#09F;
+}
+
+#confirmTxt{
+	margin-top:20px;
+	margin-bottom:30px;
+}
+#confirmTxt div{
+	/*width:90%;*/
+	background-color:#FFF;
+	border:solid #CCC 1px;
+	padding:10px 10px;
+	margin:auto;
+	margin-bottom:10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+#confirmTxt h3{
+	font-size:16px;
+	border-left:solid #09F 8px;
+	border-bottom:solid #09F 1px;
+	background-color:#FFF;
+	padding:5px 0px;
+	text-indent:10px;
+	margin-bottom:15px;
+}
+
+#confirmTxt h4{
+	color:#09F;
+	padding:3px 0;
+	border-left:solid #09F 3px;
+	text-indent:5px;
+	margin-bottom:5px;
+}
+
+#confirmTxt p{
+	font-size:15px;
+}
+
+
+.sub{
+	display:block;
+	width:100%;
+	padding:10px;
+	font-size:16px;
+	background-color:#06F;
+	border:0px;
+	color:#FFF;
+	margin-bottom:10px;
+}
+
+.res{
+	display:block;
+	width:100%;
+	padding:10px;
+	font-size:16px;
+	background-color:#6CF;
+	border:0px;
+	color:#FFF;
+}

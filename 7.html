@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<title>出展者情報ページ</title>
+<link href="css/finish.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+
+flg = 1;
+
+$(function(){
+	$(window).scroll(function () {
+		//$("#wrapper").css("backgroundColor","red");
+		if(flg == 1){
+		$("#backToBtn").fadeIn(500,TimeDes);
+		}
+	});
+});
+
+function TimeDes(){
+	if(flg == 1){
+	flg += 1;
+	setTimeout(function(){
+		$("#backToBtn").fadeOut(500,flgClear);
+	},3000);
+	}
+}
+
+
+function flgClear(){
+	//alert(flg)
+	flg = 1;
+	//alert(flg)
+}
+
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+
+  <!-- 出展者情報 -->
+  <h1 id="logo"><img src="images/logo.png"></h1>
+
+<!-- =====大阪IT01===== -->  <!-- =ここ（番号）= -->
+  <div class="studentInfo">
+    <div id="header">
+      <h4>Student Information | 出展者情報</h4>
+      <!-- 下記、ログイン学生の情報を表示するエリアです -->
+
+      <h3>作品番号：大阪IT01</h3><!-- =ここ（番号）= -->
+      <h5>氏名</h5><!-- =ここ（氏名）= -->
+    </div><!--header-->
+
+    <div id="finishTxt">
+      <div id="area">
+        <h4>作品タイトル</h4>
+        <p>タイトル</p><!-- =ここ（タイトル）= -->
+      </div><!--area-->
+      <div id="cont">
+        <h4>アピールポイント</h4>
+        <p>アピ</p><!-- =ここ（ポイント）= -->
+      </div><!--cont-->
+    </div><!--finishTxt-->
+
+    <div id="works">
+      <ul>
+        <li><img src="images/halosaka.jpg"></li><!-- =ここ（画像ファイル）= -->
+        <li><img src="images/halosaka.jpg"></li><!-- =ここ（画像ファイル）= -->
+        <li><img src="images/halosaka.jpg"></li><!-- =ここ（画像ファイル）= -->
+      </ul>
+      <div id="coment">
+        <h4>一言コメント</h4>
+        <p>まだまだ発展途上ではありますが、振られた仕事はなんでもやります！一生懸命がんばります。元気があります。よろしくお願い致します。</p><!-- =ここ（コメント）= -->
+      </div><!--coment-->
+    </div><!--works-->
+
+  </div><!--studentInfo-->
+
+
+</div><!--wrapper-->
+
+<div id="backToBtn">
+<p><a href="index.html" class="res">一覧画面へ</a></p>
+</div><!--backToBtn-->
+
+</body>
+</html>
