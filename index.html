@@ -4,207 +4,149 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width">
-<title>出展者情報ページ</title>
-<link href="css/finish2.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript">
-
-flg = 1;
-
-$(function(){
-	$(window).scroll(function () {
-		//$("#wrapper").css("backgroundColor","red");
-		if(flg == 1){
-		$("#backTo ,#toTop").fadeIn(500,TimeDes);
-		}
-	});
-});
-
-function TimeDes(){
-	if(flg == 1){
-	flg += 1;
-	setTimeout(function(){
-		$("#backTo ,#toTop").fadeOut(500,flgClear);
-	},3000);
-	}
-}
-
-
-function flgClear(){
-	//alert(flg)
-	flg = 1;
-	//alert(flg)
-}
-
-
-
-$(function(){
-	$('a[href^=#]').click(function(){
-		var speed = 500;
-		var href= $(this).attr("href");
-		var target = $(href == "#" || href == "" ? 'html' : href);
-		var position = target.offset().top;
-		$("html, body").animate({scrollTop:position}, speed, "swing");
-		return false;
-	});
-});
-
-
-
-</script>
+<title>IW13 出展者リスト</title>
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/cmn_layout.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 </head>
 <body>
 
-<div id="wrapper">
+<header>
+	<h1><img src="img/logo.png" alt="HAL EVENT WEEK"></h1>
+</header>
 
-  <!-- 出展者情報 -->
-  <h1 id="logo"><img src="images/logo.png"></h1>
-  <div id="headerInfo">
-  <h2><span>WEBシステム・デザイン</span><br>出展者一覧</h2>
+<div class="wrapper">
+	<article>
+		<section>
+			<h2 class="ttl01">WEBシステム・デザイン・アプリ<br class="spOnly">出展者一覧</h2>
+
+			<ul class="linkArea">
+				<li class="presentation"><a href="#presentation">プレゼン</a></li>
+				<li class="system"><a href="#system">システム</a></li>
+				<li class="design"><a href="#design">デザイン</a></li>
+				<li class="mobile"><a href="#mobile">アプリ</a></li>
+			</ul>
+
+			<section id="presentation">
+				<h3 class="ttl02">プレゼン<span class="time">9:00〜10:00、13:00〜14:00</span></h3>
+				<ul class="studentList">
+					<li>
+						<a href="it01.html">
+							<h4>IT01</h4>
+							<div class="info">
+								<p>氏名：大阪ハルタロウ</p>
+								<p>作品名：すごいやつ</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="it01.html">
+							<h4>IT01<br></h4>
+							<div class="info">
+								<p>氏名：大阪ハルタロウ</p>
+								<p>作品名：すごいやつ</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="it01.html">
+							<h4>IT01</h4>
+							<div class="info">
+								<p>氏名：大阪ハルタロウ</p>
+								<p>作品名：すごいやつ</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="it01.html">
+							<h4>IT01</h4>
+							<div class="info">
+								<p>氏名：大阪ハルタロウ</p>
+								<p>作品名：すごいやつ</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="it01.html">
+							<h4>IT01</h4>
+							<div class="info">
+								<p>氏名：大阪ハルタロウ</p>
+								<p>作品名：すごいやつ</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="it01.html">
+							<h4>IT01</h4>
+							<div class="info">
+								<p>氏名：大阪ハルタロウ</p>
+								<p>作品名：すごいやつ</p>
+							</div>
+						</a>
+					</li>
+					<!-- 以降こぴぺ-->
+				</ul>
+			</section>
+
+			<section id="system">
+				<h3 class="ttl02">システム<span class="time">9:00〜10:00、13:00〜14:00</span></h3>
+				<ul class="studentList">
+					<li>
+						<a href="it01.html">
+							<h4>IT01</h4>
+							<div class="info">
+								<p>氏名：大阪ハルタロウ</p>
+								<p>作品名：すごいやつ</p>
+							</div>
+						</a>
+					</li>
+					<!-- 以降こぴぺ-->
+				</ul>
+			</section>
+
+			<section id="design">
+				<h3 class="ttl02">デザイン<span class="time">9:00〜10:00、13:00〜14:00</span></h3>
+				<ul class="studentList">
+					<li>
+						<a href="wd01.html">
+							<h4>WD01</h4>
+							<div class="info">
+								<p>氏名：大阪ハルタロウ</p>
+								<p>作品名：すごいやつ</p>
+							</div>
+						</a>
+					</li>
+					<!-- 以降こぴぺ-->
+				</ul>
+			</section>
+
+			<section id="mobile">
+				<h3 class="ttl02">アプリ<span class="time">9:00〜10:00、13:00〜14:00</span></h3>
+				<ul class="studentList">
+					<li>
+						<a href="mb01.html">
+							<h4>MB01</h4>
+							<div class="info">
+								<p>氏名：大阪ハルタロウ</p>
+								<p>作品名：すごいやつ</p>
+							</div>
+						</a>
+					</li>
+					<!-- 以降こぴぺ-->
+				</ul>
+			</section>
+		</section>
+	</article>
 </div>
 
-  <div id="infoBtn">
-    <ul>
-      <li><a href="#ohStudents" id="toOh">アプリ</a></li>
-      <li><a href="#nhHeader" id="toNh">システム</a></li>
-			<li><a href="#nhHeader" id="toNh">デザイン</a></li>
-    </ul>
-  </div><!--infoBtn-->
-
-
-
-<!-- =====大阪IT01===== -->
-  <div class="studentInfo">
-    <div id="header">
-      <h4>Student Information | HAL大阪出展者一覧</h4>
-      <!-- 下記、ログイン学生の情報を表示するエリアです -->
-    </div><!--header-->
-
-
-    <a href="1.html" name="ohStudents"><!-- 学生ページリンク（oh_wd01） -->
-    <div id="finishTxt">
-      <div id="area">
-        <h4 class="ohWdH4">大阪<br>WD01</h4>
-      </div><!--area-->
-      <div id="cont">
-      <ul>
-        <li><span>氏　名：</span>大阪ハルタロウ</li>
-        <li><span>校　別：</span>HAL大阪</li>
-        <li class="longTxt">作品名</li>
-       </ul>
-      </div><!--cont-->
-    </div><!--finishTxt-->
-    </a>
-
-
-		<a href="1.html" name="ohStudents"><!-- 学生ページリンク（oh_wd01） -->
-    <div id="finishTxt">
-      <div id="area">
-        <h4 class="ohWdH4">大阪<br>WD01</h4>
-      </div><!--area-->
-      <div id="cont">
-      <ul>
-        <li><span>氏　名：</span>大阪ハルタロウ</li>
-        <li><span>校　別：</span>HAL大阪</li>
-        <li class="longTxt">作品名</li>
-       </ul>
-      </div><!--cont-->
-    </div><!--finishTxt-->
-    </a>
-
-		<a href="1.html" name="ohStudents"><!-- 学生ページリンク（oh_wd01） -->
-    <div id="finishTxt">
-      <div id="area">
-        <h4 class="ohWdH4">大阪<br>WD01</h4>
-      </div><!--area-->
-      <div id="cont">
-      <ul>
-        <li><span>氏　名：</span>大阪ハルタロウ</li>
-        <li><span>校　別：</span>HAL大阪</li>
-        <li class="longTxt">作品名</li>
-       </ul>
-      </div><!--cont-->
-    </div><!--finishTxt-->
-    </a>
-
-
-		<a href="1.html" name="ohStudents"><!-- 学生ページリンク（oh_wd01） -->
-    <div id="finishTxt">
-      <div id="area">
-        <h4 class="ohWdH4">大阪<br>WD01</h4>
-      </div><!--area-->
-      <div id="cont">
-      <ul>
-        <li><span>氏　名：</span>大阪ハルタロウ</li>
-        <li><span>校　別：</span>HAL大阪</li>
-        <li class="longTxt">作品名</li>
-       </ul>
-      </div><!--cont-->
-    </div><!--finishTxt-->
-    </a>
-
-
-<!-- =======以下、NH一覧======= -->
-
-    <div id="nhHeader">
-      <h4>Student Information | HAL名古屋出展者一覧</h4>
-      <!-- 下記、ログイン学生の情報を表示するエリアです -->
-    </div><!--header-->
-
-    <a href="3.html"><!-- 学生ページリンク（nh_it01） -->
-    <div id="finishTxt">
-      <div id="area">
-        <h4 class="nhH4">名古屋<br>IT01</h4>
-      </div><!--area-->
-      <div id="cont">
-      <ul>
-        <li><span>氏　名：</span>HALアプリ</li>
-        <li><span>校　別：</span>HAL大阪</li>
-        <li class="longTxt">作品名</li>
-       </ul>
-      </div><!--cont-->
-    </div><!--finishTxt-->
-    </a>
-
-
-		<a href="3.html"><!-- 学生ページリンク（nh_it01） -->
-    <div id="finishTxt">
-      <div id="area">
-        <h4 class="nhH4">名古屋<br>IT01</h4>
-      </div><!--area-->
-      <div id="cont">
-      <ul>
-        <li><span>氏　名：</span>HALアプリ</li>
-        <li><span>校　別：</span>HAL大阪</li>
-        <li class="longTxt">作品名</li>
-       </ul>
-      </div><!--cont-->
-    </div><!--finishTxt-->
-    </a>
-
-
-		<a href="3.html"><!-- 学生ページリンク（nh_it01） -->
-    <div id="finishTxt">
-      <div id="area">
-        <h4 class="nhH4">名古屋<br>IT01</h4>
-      </div><!--area-->
-      <div id="cont">
-      <ul>
-        <li><span>氏　名：</span>HALアプリ</li>
-        <li><span>校　別：</span>HAL大阪</li>
-        <li class="longTxt">作品名</li>
-       </ul>
-      </div><!--cont-->
-    </div><!--finishTxt-->
-    </a>
-
-  </div><!--studentInfo-->
-
-</div><!--wrapper-->
-
-<div id="toTop">
-<p><a href="#logo" class="hoge" onclick="ring();">Page<br>TOP</a></p>
+<div class="goTop">
+	<p><a href="#">↑</a></p>
 </div>
+
+<footer>
+	<p><small>HAL OSAKA IW13A627 &copy; ALL RIGHTS RESERVED.</small></p>
+</footer>
 
 </body>
 </html>

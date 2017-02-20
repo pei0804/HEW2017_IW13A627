@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/*=============================
+*	page link
+*============================*/
+
+.linkArea {
+	width: 100%;
+	min-width: 300px;
+	margin: 0 auto 40px;
+	overflow: hidden;
+}
+.linkArea li {
+	width: 23%;
+	text-align: center;
+	float: left;
+}
+.linkArea li + li {
+	margin-left: 2.6%;
+}
+.linkArea li a {
+	padding: 5px 2%;
+	color: #fff;
+	border-radius: 3px;
+}
+.linkArea .presentation a {
+	background-color: darkorange;
+}
+.linkArea .system a {
+	background-color: deepskyblue;
+}
+.linkArea .design a {
+	background-color: deeppink;
+}
+.linkArea .mobile a {
+	background-color: crimson;
+}
+
+/*=============================
+*	section
+*============================*/
+
+article > section > section {
+	margin-bottom: 40px;
+}
+
+.studentList {
+	width: 100%;
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+}
+.studentList li {
+	letter-spacing: -.4em;
+	border-bottom: solid 1px #ccc;
+	background-color: #eee;
+	overflow: hidden;
+}
+.studentList li a {
+	position: relative;
+}
+.studentList li a:after {
+	content: '';
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 24px;
+	right: 5px;
+	background: url(../img/ico_arrow.png) no-repeat;
+	background-size: 100%;
+}
+.studentList h4 {
+	width: 30%;
+	text-align: center;
+	vertical-align: middle;
+	letter-spacing: normal;
+	display: inline-block;
+}
+.studentList .info {
+	width: 70%;
+	padding: 3%;
+	letter-spacing: normal;
+	vertical-align: middle;
+	background-color: #fff;
+	display: inline-block;
+}
+
+
+
+
+
+#infoBtn {
+	overflow:hidden;
+	border-radius:10px;
+	margin-top:20px;
+}
+
+#infoBtn li a {
+	display:block;
+	padding:10px;
+	font-size:16px;
+	border:0px;
+	color:#FFF;
+	text-align:center;
+}

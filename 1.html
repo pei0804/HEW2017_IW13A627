@@ -4,88 +4,55 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width">
-<title>出展者情報ページ</title>
-<link href="css/finish.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript">
-
-flg = 1;
-
-$(function(){
-	$(window).scroll(function () {
-		//$("#wrapper").css("backgroundColor","red");
-		if(flg == 1){
-		$("#backToBtn").fadeIn(500,TimeDes);
-		}
-	});
-});
-
-function TimeDes(){
-	if(flg == 1){
-	flg += 1;
-	setTimeout(function(){
-		$("#backToBtn").fadeOut(500,flgClear);
-	},3000);
-	}
-}
-
-
-function flgClear(){
-	//alert(flg)
-	flg = 1;
-	//alert(flg)
-}
-
-</script>
+<title></title>
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/cmn_layout.css" rel="stylesheet" type="text/css">
+<link href="css/student.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 </head>
 <body>
 
-<div id="wrapper">
+<header>
+	<h1><img src="img/logo.png" alt="HAL EVENT WEEK"></h1>
+</header>
 
-  <!-- 出展者情報 -->
-  <h1 id="logo"><img src="images/logo.png"></h1>
+<div class="wrapper">
+<article>
+	<section>
+		<h2>Student Information</h2>
+		<section>
+			<h3>出展者番号：IT01</h3>
+			<p><img src="img/halosaka.jpg" alt=""></p>
+			<p class="name">春 太郎<span>（はる たろう）</span></p>
+			<section class="title">
+				<h4>作品名</h4>
+				<p>すごいやつ</p>
+			</section>
+			<section class="appeal">
+				<h4>アピールポイント</h4>
+				<p>なんかすごいねんで</p>
+			</section>
+			<section class="comment">
+				<h4>コメント</h4>
+				<p>なんかすごいからみにきてな</p>
+			</section>
+			<section class="item">
+				<ul>
+					<li><a href="../pdf/poh_it01/oh_it01_card.pdf" class="sub">この学生の名刺カードを確認</a></li><!-- =ここ（ファイル）= -->
+					<li><a href="../pdf/poh_it01/oh_it01_pre.pdf" class="sub">この学生のプレゼンボードを確認</a></li><!-- =ここ（ファイル）= -->
+					<li><a href="mailto:yamaguchi.you@hal.ac.jp" class="sub">この学生と連絡を取る</a></li><!-- =ここ（アドレス）= -->
+				</ul>
+			</section>
+		</section>
+	</section>
+</article>
 
-<!-- =====大阪IT01===== -->  <!-- =ここ（番号）= -->
-  <div class="studentInfo">
-    <div id="header">
-      <h4>Student Information | 出展者情報</h4>
-      <!-- 下記、ログイン学生の情報を表示するエリアです -->
+<div class="goTop">
+	<p><a href="#">↑</a></p>
+</div>
 
-      <h3>作品番号：大阪IT01</h3><!-- =ここ（番号）= -->
-      <h5>氏名</h5><!-- =ここ（氏名）= -->
-    </div><!--header-->
-
-    <div id="finishTxt">
-      <div id="area">
-        <h4>作品タイトル</h4>
-        <p>タイトル</p><!-- =ここ（タイトル）= -->
-      </div><!--area-->
-      <div id="cont">
-        <h4>アピールポイント</h4>
-        <p>アピ</p><!-- =ここ（ポイント）= -->
-      </div><!--cont-->
-    </div><!--finishTxt-->
-
-    <div id="works">
-      <ul>
-        <li><img src="images/halosaka.jpg"></li><!-- =ここ（画像ファイル）= -->
-        <li><img src="images/halosaka.jpg"></li><!-- =ここ（画像ファイル）= -->
-        <li><img src="images/halosaka.jpg"></li><!-- =ここ（画像ファイル）= -->
-      </ul>
-      <div id="coment">
-        <h4>一言コメント</h4>
-        <p>まだまだ発展途上ではありますが、振られた仕事はなんでもやります！一生懸命がんばります。元気があります。よろしくお願い致します。</p><!-- =ここ（コメント）= -->
-      </div><!--coment-->
-    </div><!--works-->
-
-  </div><!--studentInfo-->
-
-
-</div><!--wrapper-->
-
-<div id="backToBtn">
-<p><a href="index.html" class="res">一覧画面へ</a></p>
-</div><!--backToBtn-->
-
+<footer>
+	<p><small>HAL OSAKA IW13A627 &copy; ALL RIGHTS RESERVED.</small></p>
+</footer>
 </body>
 </html>
