@@ -68,8 +68,8 @@ header {
 
 .wrapper {
 	width: 95%;
-	max-width: 960px;
-	margin: 20px auto 0;
+	max-width: 840px;
+	margin: 0 auto 60px;
 }
 
 /*=============================
@@ -77,7 +77,6 @@ header {
 *============================*/
 
 .goTop {
-	/*display: none;*/
 	width: 50px;
 	height: 50px;
 	box-shadow: 0px 3px 2px #aaa;
@@ -85,17 +84,23 @@ header {
 	border-radius: 25px;
 	position: fixed;
 	bottom: 25px;
-	right: 25px;
+	right: 5%;
 }
 
 .goTop a {
 	width: 50px;
 	height: 50px;
 	color: #fff;
+	font-weight: bold;
 	text-align: center;
 	line-height: 50px;
 	font-size: 16px;
 	border-radius: 25px;
+}
+@media screen and (max-width: 640px) {
+	.goTop {
+		right: 5%;
+	}
 }
 
 /*=============================
@@ -110,17 +115,16 @@ footer p {
 *	ttl
 *============================*/
 
-*[class^="ttl"] {
-	text-align: center;
-}
-
 .ttl01 {
 	margin-bottom: 40px;
 	color: #0053af;
+	text-align: center;
 }
 .ttl02 {
 	padding: 5px 0;
 	color: #fff;
+	text-align: center;
+	border-radius: 5px 5px 0 0;
 }
 .ttl02 .time {
 	display: block;
@@ -135,11 +139,36 @@ footer p {
 #design .ttl02 {
 	background-color: #00BD03;
 }
-#mobile .ttl02 {
+#app .ttl02 {
 	background-color: #F72587;
+}
+
+.ttl03 {
+	padding-left: 10px;
+}
+#presentation .ttl03 {
+	color: #FF5900;
+	border-left: solid 5px #FF5900;
+	border-bottom: solid 1px #FF5900;
+}
+#system .ttl03 {
+	color: #0067FF;
+	border-left: solid 5px #0067FF;
+	border-bottom: solid 1px #0067FF;
+}
+#design .ttl03 {
+	color: #00BD03;
+	border-left: solid 5px #00BD03;
+	border-bottom: solid 1px #00BD03;
+}
+#app .ttl03 {
+	color: #F72587;
+	border-left: solid 5px #F72587;
+	border-bottom: solid 1px #F72587;
 }
 @media screen and (max-width: 640px) {
 	.ttl01 {
+		margin-bottom: 20px;
 		font-size: 18px;
 	}
 	.ttl02 {

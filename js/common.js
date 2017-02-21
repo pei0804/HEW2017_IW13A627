@@ -9,4 +9,32 @@ $(function() {
 		$("html, body").animate({scrollTop:position}, speed, "swing");
 		return false;
 	});
+	
+	//-- pagetop --//
+	var topBtn = $('.goTop');    
+	topBtn.hide();
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			topBtn.fadeIn();
+		} else {
+			topBtn.fadeOut();
+		}
+	});
+	topBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 500);
+		return false;
+	});
+	
+	//-- スライダー --//
+	$(function() {
+		$('.comp > .slider').slick({
+			arrows: false,
+			autoplay: true,
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1
+		});
+	});
 });

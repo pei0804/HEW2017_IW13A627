@@ -7,7 +7,7 @@
 .linkArea {
 	width: 100%;
 	min-width: 300px;
-	margin: 0 auto 40px;
+	margin: 0 auto;
 	overflow: hidden;
 }
 .linkArea li {
@@ -16,12 +16,25 @@
 	float: left;
 }
 .linkArea li + li {
-	margin-left: 2.6%;
+	margin-left: 2.66%;
 }
 .linkArea li a {
-	padding: 5px 2%;
+	padding: 10px 2%;
 	color: #fff;
-	border-radius: 3px;
+	border-radius: 5px;
+	position: relative;
+}
+.linkArea li a:after {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-left: -10px;
+	position: relative;
+	left: 50%;
+	bottom: 0;
+	background: url(../img/ico_arrow_bottom.png) no-repeat;
+	background-size: 100%;
 }
 .linkArea .presentation a {
 	background-color: #FF5900;
@@ -35,13 +48,31 @@
 .linkArea .mobile a {
 	background-color: #F72587;
 }
+@media screen and (max-width: 640px) {
+	.linkArea li a {
+		padding: 5px 2%;
+	}
+	.linkArea li a:after {
+		width: 14px;
+		height: 14px;
+		margin-left: -7px;
+		position: relative;
+		left: 50%;
+		bottom: 0;
+	}
+}
 
 /*=============================
 *	section
 *============================*/
 
 article > section > section {
-	margin-bottom: 40px;
+	padding-top: 40px;
+}
+@media screen and (max-width: 640px) {
+	article > section > section {
+		padding-top: 20px;
+	}
 }
 
 .studentList {
@@ -60,12 +91,12 @@ article > section > section {
 }
 .studentList li a:after {
 	content: '';
-	width: 16px;
-	height: 16px;
+	width: 20px;
+	height: 20px;
 	position: absolute;
-	top: 24px;
-	right: 5px;
-	background: url(../img/ico_arrow.png) no-repeat;
+	top: 28px;
+	right: 15px;
+	background: url(../img/ico_arrow_right.png) no-repeat;
 	background-size: 100%;
 }
 .studentList h4 {
@@ -77,28 +108,15 @@ article > section > section {
 }
 .studentList .info {
 	width: 70%;
-	padding: 3%;
+	padding: 10px 3%;
 	letter-spacing: normal;
 	vertical-align: middle;
 	background-color: #fff;
 	display: inline-block;
 }
-
-
-
-
-
-#infoBtn {
-	overflow:hidden;
-	border-radius:10px;
-	margin-top:20px;
-}
-
-#infoBtn li a {
-	display:block;
-	padding:10px;
-	font-size:16px;
-	border:0px;
-	color:#FFF;
-	text-align:center;
+@media screen and (max-width: 640px) {
+	.studentList li a:after {
+		top: 22px;
+		right: 5px;
+	}
 }
