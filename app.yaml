@@ -19,9 +19,11 @@ handlers:
 
 - url: /img
   static_dir: img
+  expiration: "5h"
 
 - url: /js
   static_dir: js
 
 - url: /pdf
   static_dir: pdf
+  expiration: "5h"
