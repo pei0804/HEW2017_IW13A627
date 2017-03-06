@@ -44,7 +44,7 @@ body {
 		font-size: 12px;
 	}
 	.pcOnly {
-		display: none;
+		display: none !important;
 	}
 	.spOnly {
 		display: block;

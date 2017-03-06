@@ -19,37 +19,61 @@
 	margin-left: 2.66%;
 }
 .linkArea li a {
-	padding: 10px 2%;
+	padding: 10px 2% 15px;
 	color: #fff;
 	border-radius: 5px;
-	position: relative;
+	font-weight: bold;
 }
-.linkArea li a:after {
-	content: '';
-	display: block;
-	width: 20px;
-	height: 20px;
-	margin-left: -10px;
-	position: relative;
-	left: 50%;
-	bottom: 0;
-	background: url(../img/ico_arrow_bottom.png) no-repeat;
-	background-size: 100%;
+
+.linkArea li a:hover {
+	padding: 15px 2% 10px;
+	transition: none;
+	opacity: 1;
 }
+
 .linkArea .presentation a {
-	background-color: #FF5900;
+	 background-color: #FF5900;
+	 box-shadow:0px -5px 0px 0px #cc4700 inset;
+ }
+
+.linkArea .presentation a:hover {
+	box-shadow:0px 5px 0px 0px #cc4700 inset;
 }
 .linkArea .system a {
 	background-color: #0067FF;
+	box-shadow:0px -5px 0px 0px #0052cc inset;
+}
+.linkArea .system a:hover {
+	box-shadow:0px 5px 0px 0px #0052cc inset;
 }
 .linkArea .design a {
 	background-color: #00BD03;
+	box-shadow:0px -5px 0px 0px #008002 inset;
+}
+.linkArea .design a:hover {
+	box-shadow:0px 5px 0px 0px #008002 inset;
 }
 .linkArea .mobile a {
 	background-color: #F72587;
+	box-shadow:0px -5px 0px 0px #cc1f70 inset;
 }
+.linkArea .mobile a:hover {
+	box-shadow:0px 5px 0px 0px #cc1f70 inset;
+}
+
+.linkArea li span {
+	display: block;
+	font-size: 12px;
+	line-height: 1.4;
+	font-weight: normal;
+}
+
 @media screen and (max-width: 640px) {
 	.linkArea li a {
+		padding: 5px 2%;
+	}
+
+	.linkArea li a:hover {
 		padding: 5px 2%;
 	}
 	.linkArea li a:after {
